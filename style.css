@@ -1,0 +1,39 @@
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+table, th, td {
+  border: 1px solid black ;
+}
+.container {
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:"dado1 dado2" "table table";
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 25%;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    max-width: 100%;
+}
+ @media (max-width: 700px) {
+   .container {
+     grid-template-areas:"dado1 dado1" "dado2 dado2" "table table";
+   }
+ }
+#dado1 {
+  grid-area: dado1;
+}
+#dado2 {
+  grid-area: dado2;
+}
+#table {
+  grid-area: table;
+}
