@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <script type="text/javascript" src='javascript.js'> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main id="data">
+      <div class="container">
+        <div class="box" id="dado1">
+          <p>Tecnologia:</p>
+          <input type="text" name="tec" id="tecnologia" oninput="checkTec()">
+        </div>
+        <div class="box" id="dado2">
+          <p>Experiencia:</p>
+          <input type="number" name="exp" id="experiencia">
+          <input type="button" value="Adicionar" id="buttonadd" onclick="addExp()">
+        </div>
+        <div class="box" id="table">
+          <table id="tabela">
+            <tr>
+              <th>Tecnologia</th>
+              <th>Experiencia</th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
